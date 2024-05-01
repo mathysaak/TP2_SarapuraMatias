@@ -4,11 +4,11 @@ public class Producto {
 	
 	private String codigo;
 	private String descripcion;
-	private int precioUnitario;
+	private double precioUnitario;
 	private OrigenFabricacion origenFabricacion;
 	private Categoria categoria;
 	
-	public Producto(String codigo, String descripcion, int precioUnitario, OrigenFabricacion origenFabricacion,
+	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origenFabricacion,
 			Categoria categoria) {
 
 		this.codigo = codigo;
@@ -50,11 +50,11 @@ public class Producto {
 		this.descripcion = descripcion;
 	}
 
-	public int getPrecioUnitario() {
+	public double getPrecioUnitario() {
 		return precioUnitario;
 	}
 
-	public void setPrecioUnitario(int precioUnitario) {
+	public void setPrecioUnitario(double precioUnitario) {
 		this.precioUnitario = precioUnitario;
 	}
 

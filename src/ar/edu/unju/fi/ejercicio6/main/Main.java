@@ -15,12 +15,12 @@ public class Main {
 
         converter1.mostrarObjeto(felinoSalvaje);
 
-        FelinoSalvaje lobo = new FelinoSalvaje("Lobo", (byte) 10, 40f);
+        FelinoSalvaje tanner = new FelinoSalvaje("Tanner", (byte) 20, 186f);
 
-        if (Converter.isNotNull(lobo)) {
+        if (Converter.isNotNull(tanner)) {
             Converter<FelinoSalvaje, FelinoDomestico> converter2 = y -> new FelinoDomestico(y.getNombre(), y.getEdad(), y.getPeso());
 
-            FelinoDomestico felinoDomestico = converter2.convert(lobo);
+            FelinoDomestico felinoDomestico = converter2.convert(tanner);
 
             converter2.mostrarObjeto(felinoDomestico);
         } else {
